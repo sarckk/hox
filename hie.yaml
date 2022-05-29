@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "hox:lib"
+
+    - path: "./app/Main.hs"
+      component: "hox:exe:hox-exe"
+
+    - path: "./app/Paths_hox.hs"
+      component: "hox:exe:hox-exe"
+
+    - path: "./test"
+      component: "hox:test:hox-test"

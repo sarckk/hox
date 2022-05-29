@@ -26,13 +26,15 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Scanner
+      Token
+      TokenType
   other-modules:
       Paths_hox
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
-    , text
   default-language: Haskell2010
 
 executable hox-exe
@@ -45,7 +47,6 @@ executable hox-exe
   build-depends:
       base >=4.7 && <5
     , hox
-    , text
   default-language: Haskell2010
 
 test-suite hox-test
@@ -59,5 +60,4 @@ test-suite hox-test
   build-depends:
       base >=4.7 && <5
     , hox
-    , text
   default-language: Haskell2010
